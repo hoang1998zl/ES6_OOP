@@ -1,0 +1,22 @@
+.form-label {
+    font-weight: bold;
+}
+
+#employeeRow,
+#customerRow {
+    display: none;
+}
+
+table {
+    width: 100%;
+
+    tr {
+
+        td,
+        th {
+            padding: 0.5rem 0;
+            text-align: center;
+            border: 1px solid #999;
+        }
+    }
+}
