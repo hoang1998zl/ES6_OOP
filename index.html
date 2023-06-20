@@ -104,11 +104,13 @@
                 </div>
             </div>
         </div>
+        <button type="reset" id="btnReset" class="d-none"></button>
+    </form>
+    <div class="container">
         <div class="mb-3 d-flex gap-3">
             <button type="button" id="btnThem" class="btn btn-success">
                 Thêm
             </button>
-            <button type="reset" id="btnReset" class="d-none"></button>
             <button type="button" id="btnCapNhat" class="btn btn-warning">
                 Cập nhật
             </button>
@@ -119,13 +121,13 @@
                 Sắp xếp theo tên
             </button>
             <select id="btnSapXepTheoLoai" class="form-select w-25">
-                <option selected disabled>Lọc theo loại người dùng</option>
+                <option value="" selected disabled>Lọc theo loại người dùng</option>
                 <option value="Student">Student</option>
                 <option value="Employee">Employee</option>
                 <option value="Customer">Customer</option>
             </select>
         </div>
-    </form>
+    </div>
     <div class="container">
         <table class="w-100">
             <thead>

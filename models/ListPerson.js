@@ -163,6 +163,10 @@ export default class ListPerson {
                 item.value = person[id];
             }
         }
+        document.getElementById('id').readOnly = 'true';
+        document.getElementById('id').style.backgroundColor = '#f2f2f2';
+        document.getElementById('btnThem').style.display = "none";
+        document.getElementById('btnCapNhat').style.display = "block";
     }
 
     chinhSuaPerson(person) {
@@ -172,6 +176,10 @@ export default class ListPerson {
             this.renderLayout();
             this.luuLocal();
         }
+        document.getElementById('id').readOnly = 'false';
+        document.getElementById('id').style.backgroundColor = 'transparent';
+        document.getElementById('btnThem').style.display = "block";
+        document.getElementById('btnCapNhat').style.display = "none";
     }
 
     changeRow() {
@@ -202,9 +210,5 @@ export default class ListPerson {
                 customerRow.style.display = 'none';
                 break;
         }
-    }
-
-    renderFilter() {
-        
     }
 }
